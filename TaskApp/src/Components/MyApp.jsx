@@ -31,7 +31,7 @@ export default function MyApp() {
             alert("Invalid priority chosen — defaulting to 'low'.");
             priority = "low";
         }
-        const newTask = { id: Date.now(), text: taskText, priority };
+        const newTask = { id: Date.now(), text: taskText, priority, done: false };
         setTasks((prev) => [...prev, newTask]);
     }
     function handleFilterPriority(p) {
@@ -42,6 +42,13 @@ export default function MyApp() {
     }
     function handleDeleteTask(id) {
         setTasks((prev) => prev.filter((task) => task.id !== id));
+    }
+    function handleToggleTaskDone(id) {
+        setTasks((prev) =>
+            prev.map((task) =>
+                task.id === id ? { ...task, done: !task.done } : task
+            )
+        );
     }
     const visibleTasks = tasks.filter(
         (t) => filter === "all" || t.priority === filter
@@ -72,6 +79,12 @@ export default function MyApp() {
                             <span className={`priorityBadge ${t.priority}`}>
                                 {t.priority}
                             </span>
+                            <button
+                                className="taskButton doneButton"
+                                onClick={() => handleToggleTaskDone(t.id)}
+                            >
+                                {t.done ? "Undo" : "Done"}
+                            </button>
                             <button className="taskButton" onClick={() => handleDeleteTask(t.id)}>
                                 Delete
                             </button>
