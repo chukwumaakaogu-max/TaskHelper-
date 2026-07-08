@@ -74,7 +74,7 @@ export default function MyApp() {
                 ) : (
                     visibleTasks.map((t) => (
                         <div key={t.id} className="taskItem">
-                            <span className="taskText">{t.text}</span>
+                            <span className={`taskText ${t.done ? "doneTask" : ""}`}>{t.text}</span>
                             <div className="taskActions">
                             <span className={`priorityBadge ${t.priority}`}>
                                 {t.priority}
