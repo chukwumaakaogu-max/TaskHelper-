@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./MyApp.css";
+import logo from "../../MichaelGames.png";
 export default function MyApp() {
     return (
         <section>
             <div>
-                <image src="https://images.unsplash.com/photo-1612832021060-1f3e5c6b8d9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Gaming" />
+                <img src={logo} alt="Company logo" width="200" height="200" />
             </div>
             <div>
                 <h2>Motto:No better way to spend time than to enjoy it</h2>
