@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MyApp.css";
-import logo from "../../MichaelGames.png";
+import logo from "./MichaelGames.png";
 export default function MyApp() {
     return (
         <section>
