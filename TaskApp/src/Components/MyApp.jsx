@@ -5,7 +5,7 @@ export default function MyApp() {
     return (
         <section>
             <div>
-                <img src={sali} alt="Salford" width="600" height="800" />
+                <img src={sali} alt="Salford"/>
             </div>
         </section>
     )
