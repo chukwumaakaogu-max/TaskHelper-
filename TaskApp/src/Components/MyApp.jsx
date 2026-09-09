@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MyApp.css";
-import logo from "./salford.CorelDRAW 2026 Graphic";
+import logo from "./salford.png";
 export default function MyApp() {
     return (
         <section>
