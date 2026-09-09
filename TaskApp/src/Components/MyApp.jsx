@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MyApp.css";
-import logo from "./MichaelGames.png";
+import logo from "./salford.png";
 export default function MyApp() {
     return (
         <section>
@@ -26,6 +26,20 @@ export default function MyApp() {
             </div>
             <div>
                 <p>Contact us at:0916-219-0470 or email us at chukwumaakaogu@gmail.com</p>
+            </div>
+            <div>
+                {/* The "Button" */}
+                <a href="#contact-section" className="my-button-style">
+                    Go to Contact Info
+                </a>
+
+                {/* ... other content ... */}
+
+                {/* The Target Destination */}
+                <div id="contact-section">
+                    <h2>Contact Us</h2>
+                    <p>Email: example@email.com</p>
+                </div>
             </div>
         </section>
     )
