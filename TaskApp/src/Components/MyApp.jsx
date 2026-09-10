@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MyApp.css";
-import sali from "./Chrichri2.pdf";
+import sali from "./chichi.png";
 export default function MyApp() {
     return (
         <section>
