@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MyApp.css";
-import MikesClothes from "./MikesClothes.png";
+import MikesClothes from "./Components/MikesClothes.png";
 export default function MyApp() {
     return (
         <section>
